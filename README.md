@@ -2,7 +2,8 @@
 # Desenvolvedor: Igor Fernandes
 
 <pre>
-- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos HTML pelo<br> JS. A dinamicidade do projeto torna capaz a divisão de elementos, com uma arquitetura fragmentada que irá ajudar a otimizar o<br> desempenho e a organização de seus códigos. A sua estrutura basea-se numa arquitetura Do React, mas utilizando apenas recursos<br> nativos do JS.<br>
+- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos HTML pelo<br> JS. A dinamicidade do projeto te possibilita a divisão de elementos e uma arquitetura fragmentada que irá ajudar a otimizar o<br> desempenho e a organização de seus códigos. A sua estrutura basea-se na arquitetura do React, com utilização apenas de recursos<br> nativos do JS.<br><br>
+Ao instalar a biblioteca em seu projeto, voce poderá encapsular seus escopos html e charmá-los em qualquer momento do projeto, colocar parâmetros dinâmicos e até mesclar estruturas em momentos específicos. 
 </pre>
 
 
@@ -57,6 +58,8 @@ crt.create({
 
 <pre>
 
+import * as config from '../../../../rebuild';
+
 let crt = new Construct();
 
 crt.create({
@@ -69,6 +72,10 @@ crt.create({
 });
 </pre>
 
+
+### RESULTADO:
+
+<img src="./imgs/code.jpg" alt="Código do Rebuild">
 
 <br><br><br>
 
