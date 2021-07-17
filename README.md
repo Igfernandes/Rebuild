@@ -72,37 +72,118 @@ crt.create({
 });
 </pre>
 
-
-### RESULTADO:
-
-<img src="./imgs/code.jpg" alt="Código do Rebuild">
-
 <br><br><br>
 
 
-<strong><h3>#DOCUMENTAÇÃO:</h3></strong> 
+<strong><h3>#OPTIONS:</h3></strong> 
 
-<strong>data-offset</strong> - Nesse atributo podemos modificar sua estrutura. O valor 'default' é  representado pelo sidebar alcançando 15% da tela, mas caso queira ajustar para outras propriedades, os valores disponívels são:
+<strong>Parâmetros</strong>
 
 <table>
+   <thead>
+      <tr>
+         <td>Parâmetro</td>
+         <td>Tipo</td>
+         <td>Descrição</td>
+         <td>Exemplo</td>
+      </tr>
   <tbody>
-    <tr>
-      <td>data-offset</td><td>default</td>
+     <tr>
+      <td>Coord</td>
+      <td>O parâmetro é a localização da onde o elemento que está sendo criado será introduzido. Nesse campo o valor a ser repassado precisa ser a localização já estabelecida por um dos métodos nativos do JS para encontrar elementos do DOM.</td>
+      <td>coord: document.querySelector("body");
+        </td>
     </tr>
+     
     <tr>
-       <td>data-offset</td><td>25</td>
+      <td>Type</td>
+      <td>Neste parâmetro voce consegue definir qualquer tipo de tag html apenas declarando o seu nome do selector. <br>@Obser: As tags "imgs" seguem um padrão próprio além da modificação de seus atributos pelo parâmetro "attribute". <a href="#imgstag">veja mais</a> </td>
+       <td>type: "div"</td>
     </tr>
-    <tr>
-       <td>data-offset</td><td>50</td>
+     
+     <tr>
+      <td>class</td>
+      <td>Neste parâmetro voce consegue definir quais serão as classes do elemento, as colocando separadas por espaço.</td>
+       <td>class: "minha-classe"</td>
     </tr>
-    <tr>
-       <td>data-offset</td><td>75</td>
+     
+     <tr>
+      <td>id</td>
+      <td>Neste parâmetro voce consegue definir o id do elemento.</td>
+      <td>text: "caixa"</td>
     </tr>
+     
     <tr>
-       <td>data-offset</td><td>90</td>
+      <td>text</td>
+      <td>Nesta parâmetro voce consegue definir o texto que será esboçado dentro do elemento.</td>
+      <td>text: "Olá Mundo!"</td>
     </tr>
+     
     <tr>
-       <td>data-offset</td><td>100</td>
+      <td>style</td>
+      <td>Nesta parâmetro voce consegue definir o estilo dentro da tag do elemento, do tipo "inline".</td>
+      <td>text: "Olá Mundo!"</td>
+    </tr>
+     
+     <tr>
+      <td>attribute</td>
+      <td>Nesta parâmetro voce consegue definir os atributos do elemento, sendo cada um deles um array contendo um objeto com dois parâmetros a mais. O parâmetro de "type" você irá definir o qual será o atributo setado. O parâmetro "value" voce irá introduzir o valor como string.</td>
+      <td>attribute: [{
+            type: "data",
+            value: "informacao"
+         }]
+        </td>
+    </tr>
+     
+    <tr>
+      <td>html</td>
+      <td>Nesta parâmetro voce consegue definir valor htmls a serem introduzidos no elemento, sendo cada um deles um array, recebendo um valor do tipo string.</td>
+          <td>html: ["<span>Olá</span>,
+                     "<h1>Mundo!</h1>"
+             ]
+        </td>
+    </tr>
+     
+   <tr>
+      <td>child</td>
+      <td>Nesta parâmetro voce consegue definir elementos filhos a serem introduzidos no elemento que será criado, sendo o parâmetro um array recebendo elementos do tipo html definidos. A ordem em que os elementos são introduzidos segue a mesma que serão criados no html. Na biblioteca, é possível criar um modelo cascata com esse parâmetro, definindo uma nova estrutura dentro desse parâmetro "child".</td>
+          <td>   crt.create({
+                 type: "game",
+                 coord: document.querySelector("body"),
+                 child:[
+                     crt.create({
+                         type: "div",
+                         class: "game_boy",
+                         child: [
+                             crt.create({
+                                 type: "span",
+                                 text: "Eu sou um game boy"
+                             })
+                         ]
+                     }),
+                     crt.create({
+                         type: "div",
+                         class: "mesa",
+                         child: [
+                             crt.create({
+                                 type: "span",
+                                 text: "Eu sou uma mesa"
+                             })
+                         ]
+                     })
+                 ]
+             });
+        </td>
+    </tr>
+     
+     <tr id="imgstag">
+      <td>Extra</td>
+      <td>As tags "imgs" seguem um próprio padrão, onde o programdor poderá definir mais 3 parâmetros na estrutura: src, title e o alt. Os três parâmetros recebem valores do tipo string e são destinados a esse elemento image que será criado pela biblioteca</td>
+      <td>type: "img",<br>
+          src: "./yourpath/img.jpg",<br>
+          alt: "Imagem",<br>
+          title: "apenas uma imagem"
+        </td>
     </tr>
   </tbody>
 </table>
@@ -110,27 +191,5 @@ crt.create({
 <br> <br>
 
 
-
-
-<strong>data-sideBtn</strong> - Esse atributo foi configurado para aceitar dois valores: <br><br>
-
-<strong>data-sideBtn="pillars"</strong> - Irá criar pilares no botão, com o efeito único. Caso queira modificar o elemento de dentro, voce pode utilizar qualquer símbolo disponível nesse site: https://pt.wiktionary.org/wiki/%E2%98%B0. Apenas chame no final do seu código a função btnSideBar() e coloque o símbolo dentro dela. Exemplo: <br>
-
-<pre>
-<script> 
-  btnSideBar('♅');
-</script>
-</pre>
-<br> <br>
-
-<strong>data-sideBtn="cross"</strong> - Irá criar também três pilares deitados, mas a animação final irá transformar os itens em um "X"; Não há como variar, apenas manter esse efeito.
-<br> <br>
-
-<strong>data-sideBtn</strong> - Caso queira criar voce mesmo o seu botão, apenas coloque a propriedade sem um valor para que não seja criado um elemento. 
-
-<br><br><br>
-
-<Strong>RESPONSIVIDADE:</strong>
-
-Todos as resoluções abaixo de 425px terão como padrão o sidebar 100%. Caso haja necessidade de modificação, modifique por conta própria na folha de estilo. 
+ 
 
