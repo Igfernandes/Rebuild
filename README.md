@@ -9,7 +9,7 @@
 
 <img src="./screenshot.jpg" alt="screenshot of project">
 
-- O link do video de demonstracação:
+- O link do video de demonstração:
 
 
 
