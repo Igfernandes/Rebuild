@@ -119,7 +119,6 @@ crt.create({
       <td>Nesta parâmetro voce consegue definir o estilo dentro da tag do elemento, do tipo "inline".</td>
       <td>text: "Olá Mundo!"</td>
     </tr>
-     
      <tr>
       <td>attribute</td>
       <td>Nesta parâmetro voce consegue definir os atributos do elemento, sendo cada um deles um array contendo um objeto com dois parâmetros a mais. O parâmetro de "type" você irá definir o qual será o atributo setado. O parâmetro "value" voce irá introduzir o valor como string.</td>
@@ -129,7 +128,6 @@ crt.create({
          }]
         </td>
     </tr>
-     
     <tr>
       <td>html</td>
       <td>Nesta parâmetro voce consegue definir valor htmls a serem introduzidos no elemento, sendo cada um deles um array, recebendo um valor do tipo string.</td>
