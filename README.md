@@ -17,7 +17,7 @@
 <strong>- INSTALAÇÃO:</strong> 
 
 ##DIRETO NO HTML: 
-<pre>Chama o arquivo reboost dentro do seu código HTML, com o "type" definido como modulo: </br> <script src="yourpath/reboost.js" type="module"></script></pre> <br>
+<pre>Chame o arquivo reboost dentro do seu código HTML, com o "type" definido como modulo: </br> <script src="yourpath/reboost.js" type="module"></script></pre> <br>
 
 <pre>
 Em seguida instâncie uma váriável como um tipo "Construct".
