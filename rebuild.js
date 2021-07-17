@@ -30,7 +30,7 @@ let Construct = function(){
             if($info.src){
                 $tag.src = $info.src
             }
-            if($info.title){
+            if($info.alt){
                 $tag.alt = $info.alt
             }
             if($info.title){
