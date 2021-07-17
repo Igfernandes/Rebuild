@@ -83,10 +83,10 @@ crt.create({
    <thead>
       <tr>
          <td>Parâmetro</td>
-         <td>Tipo</td>
          <td>Descrição</td>
          <td>Exemplo</td>
       </tr>
+   </thead>
   <tbody>
      <tr>
       <td>Coord</td>
