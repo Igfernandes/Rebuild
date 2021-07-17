@@ -131,8 +131,8 @@ crt.create({
     <tr>
       <td>html</td>
       <td>Nesta parâmetro voce consegue definir valor htmls a serem introduzidos no elemento, sendo cada um deles um array, recebendo um valor do tipo string.</td>
-          <td><pre>html: ["<span>Olá</span>,<br>
-                     "<h1>Mundo!</h1>"<br>
+          <td><pre>html: ['<span>Olá</span>',<br>,
+                          '<h1>Mundo!</h1>'<br>
              ]</pre>
         </td>
     </tr>
