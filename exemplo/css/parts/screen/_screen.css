@@ -1,0 +1,38 @@
+game .game_boy-screen{
+    position: relative;
+    background: #888a84;
+    height: 190px;
+    padding-top: 10%;
+    border-radius: 1.5rem 1.5rem 5rem 1.5rem;
+}
+game .game_boy-screen--bloc .game_boy-screen--bloc-pelin{
+    position: relative;
+    height: 143px;
+    width: 60%;
+    border: 9px inset #00000075;
+    border-right: 0;
+    border-bottom: 0;
+    background: #4e9a06;
+    margin: 0 auto;
+}
+game .game_boy-screen--bloc::before{
+    content: "";
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #3d3d3d;
+    border-radius: 2rem;
+}
+game .game_boy-screen .game_boy-screen--bloc-main-text {
+    text-align: center;
+}
+game .game_boy-screen span{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    width: 100%;
+    font-weight: 700;
+}

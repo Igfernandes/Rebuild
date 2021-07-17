@@ -1,0 +1,90 @@
+game .game_boy-btns .game_boy-btns-box{
+    display: flex;
+    margin-top: 19%;
+}
+game .game_boy-btns .game_boy-btns-move{
+    width: 35%;
+}
+game .game_boy-btns-move .game_boy-btns-move-direction .game_boy-btns-move-direction-up{
+    width: 30px;
+    height: 30px;
+    background: #2f3734;
+    border-top: 5px solid #757575;
+    border-right: 3px solid #757575;
+    border-left: 2px solid #757575;
+    box-shadow: 0px 1px 1px #2f3734;
+    border-radius: .2rem;
+    margin: 0 auto;
+}
+game .game_boy-btns-move .game_boy-btns-move-direction .game_boy-btns-move-direction-eixo{
+    display: flex;
+    background: #2f3734;
+}
+game .game_boy-btns-move .game_boy-btns-move-direction-eixo .game_boy-btns-move-direction-eixo-left{
+    width: 30px;
+    height: 30px;
+    background: #2f3734;
+    border: none;
+    border-top: 2px solid #757575;
+    border-bottom: 2px solid #757575;
+    border-left: 5px solid #757575;
+    box-shadow: 1px 0px 1px #2f3734;
+    border-radius: .2rem;
+}
+game .game_boy-btns-move .game_boy-btns-move-direction-eixo .game_boy-btns-move-direction-eixo-right{
+    width: 30px;
+    height: 30px;
+    background: #2f3734;
+    box-shadow: 1px 0px 1px #2f3734;
+    border-top: 2px solid #757575;
+    border-bottom: 2px solid #757575;
+    border-right: 5px solid #757575;
+    border-radius: .2rem;
+    margin-left: auto;
+}
+game .game_boy-btns-move .game_boy-btns-move-direction .game_boy-btns-move-direction-down{
+    width: 30px;
+    height: 30px;
+    background: #2f3734;
+    border-bottom: 5px solid #757575;
+    border-right: 3px solid #757575;
+    border-left: 2px solid #757575;
+    box-shadow: 0px -1px 1px #2f3734;
+    border-radius: .2rem;
+    margin: 0 auto;
+}
+
+game .game_boy-btns-command{
+    width: 130px;
+    margin-left: auto;
+}
+
+game .game_boy-btns-command .game_boy-btns-command-background::before{
+    content: "";
+    display:block;
+    position: absolute;
+    background: #69686840;
+    width: 145px;
+    height: 70px;
+    border-radius: 2rem;
+    transform: rotate(-31deg) translate(-10px,8px);
+    box-shadow: 0 -1px 1px #0000003d;
+}
+
+game .game_boy-btns-command .game_boy-btns-command-btn:first-of-type{
+    text-align: end;
+    position: relative;
+}
+
+game .game_boy-btns-command .game_boy-btns-command-btn:first-of-type button{
+    padding: 18%;
+    background: #931c2d;
+    border-radius: 2rem;
+}
+
+game .game_boy-btns-command .game_boy-btns-command-btn:last-of-type button{
+    padding: 18%;
+    background: #931c2d;
+    border-radius: 2rem;    
+    transform: translate(10px, -8px);
+}

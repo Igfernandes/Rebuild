@@ -1,0 +1,16 @@
+body{
+    background: #b1adad;
+}
+
+game{
+    max-width: 350px;
+    display: block;
+    background: #d3d8cf;
+    border: 6px solid #888a84;
+    border-radius: 2rem 2rem 5rem 2rem;
+    margin: 0 auto;
+}
+
+game .game_boy .game_boy-content{
+    padding: 8% 8% 10%;
+}

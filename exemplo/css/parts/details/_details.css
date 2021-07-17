@@ -1,0 +1,33 @@
+game .game_boy-btns .game_boy-btns-bloc{
+    margin-top: 10%;
+}
+game .game_boy-btns .game_boy-btns-bloc-segment{
+    display: flex;
+    justify-content: center;
+}
+game .game_boy-btns .game_boy-btns-bloc-segment-icon:first-of-type{
+    margin-right: 13%;
+}
+game .game_boy-btns .game_boy-btns-bloc-segment-icon button{
+    height: 50px;
+    width: 10px;
+    background: #888a84;
+    border-radius: 2rem;
+    transform: rotate(60deg);
+}
+
+game .game_boy-sound{
+    width: 40%;
+    position: relative;
+    left: 15px;
+    display: flex;
+    justify-content: space-around;
+    transform: rotate(-30deg);
+    margin-left: auto;
+}
+game .game_boy-sound .game_body-sound-icon{
+    width: 10px;
+    height: 70px;
+    background: linear-gradient(140deg, rgba(87,91,86,1) 0%, rgba(127,130,124,1) 55%, rgba(151,152,149,1) 73%);
+    border-radius: 2rem;
+}
