@@ -93,8 +93,7 @@ crt.create({
       <td>O parâmetro é a localização da onde o elemento que está sendo criado será introduzido. Nesse campo o valor a ser repassado precisa ser a localização já estabelecida por um dos métodos nativos do JS para encontrar elementos do DOM.</td>
       <td>coord: document.querySelector("body");
         </td>
-    </tr>
-     
+     </tr>
     <tr>
       <td>Type</td>
       <td>Neste parâmetro voce consegue definir qualquer tipo de tag html apenas declarando o seu nome do selector. <br>@Obser: As tags "imgs" seguem um padrão próprio além da modificação de seus atributos pelo parâmetro "attribute". <a href="#imgstag">veja mais</a> </td>
@@ -128,9 +127,9 @@ crt.create({
      <tr>
       <td>attribute</td>
       <td>Nesta parâmetro voce consegue definir os atributos do elemento, sendo cada um deles um array contendo um objeto com dois parâmetros a mais. O parâmetro de "type" você irá definir o qual será o atributo setado. O parâmetro "value" voce irá introduzir o valor como string.</td>
-      <td>attribute: [{
-            type: "data",
-            value: "informacao"
+      <td>attribute: [{<br>
+            type: "data",<br>
+            value: "informacao"<br>
          }]
         </td>
     </tr>
@@ -138,8 +137,8 @@ crt.create({
     <tr>
       <td>html</td>
       <td>Nesta parâmetro voce consegue definir valor htmls a serem introduzidos no elemento, sendo cada um deles um array, recebendo um valor do tipo string.</td>
-          <td>html: ["<span>Olá</span>,
-                     "<h1>Mundo!</h1>"
+          <td>html: ["<span>Olá</span>,<br>
+                     "<h1>Mundo!</h1>"<br>
              ]
         </td>
     </tr>
@@ -147,35 +146,34 @@ crt.create({
    <tr>
       <td>child</td>
       <td>Nesta parâmetro voce consegue definir elementos filhos a serem introduzidos no elemento que será criado, sendo o parâmetro um array recebendo elementos do tipo html definidos. A ordem em que os elementos são introduzidos segue a mesma que serão criados no html. Na biblioteca, é possível criar um modelo cascata com esse parâmetro, definindo uma nova estrutura dentro desse parâmetro "child".</td>
-          <td>   crt.create({
-                 type: "game",
-                 coord: document.querySelector("body"),
-                 child:[
-                     crt.create({
-                         type: "div",
-                         class: "game_boy",
-                         child: [
-                             crt.create({
-                                 type: "span",
-                                 text: "Eu sou um game boy"
-                             })
-                         ]
-                     }),
-                     crt.create({
-                         type: "div",
-                         class: "mesa",
-                         child: [
-                             crt.create({
-                                 type: "span",
-                                 text: "Eu sou uma mesa"
-                             })
-                         ]
-                     })
-                 ]
-             });
+          <td>   crt.create({<br>
+                 type: "game",<br>
+                 coord: document.querySelector("body"),<br>
+                 child:[<br>
+                     crt.create({<br>
+                         type: "div",<br>
+                         class: "game_boy",<br>
+                         child: [<br>
+                             crt.create({<br>
+                                 type: "span",<br>
+                                 text: "Eu sou um game boy"<br>
+                             })<br>
+                         ]<br>
+                     }),<br>
+                     crt.create({<br>
+                         type: "div",<br>
+                         class: "mesa",<br>
+                         child: [<br>
+                             crt.create({<br>
+                                 type: "span",<br>
+                                 text: "Eu sou uma mesa"<br>
+                             })<br>
+                         ]<br>
+                     })<br>
+                 ]<br>
+             });<br>
         </td>
     </tr>
-     
      <tr id="imgstag">
       <td>Extra</td>
       <td>As tags "imgs" seguem um próprio padrão, onde o programdor poderá definir mais 3 parâmetros na estrutura: src, title e o alt. Os três parâmetros recebem valores do tipo string e são destinados a esse elemento image que será criado pela biblioteca</td>
