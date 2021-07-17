@@ -99,25 +99,21 @@ crt.create({
       <td>Neste parâmetro voce consegue definir qualquer tipo de tag html apenas declarando o seu nome do selector. <br>@Obser: As tags "imgs" seguem um padrão próprio além da modificação de seus atributos pelo parâmetro "attribute". <a href="#imgstag">veja mais</a> </td>
        <td>type: "div"</td>
     </tr>
-     
      <tr>
       <td>class</td>
       <td>Neste parâmetro voce consegue definir quais serão as classes do elemento, as colocando separadas por espaço.</td>
        <td>class: "minha-classe"</td>
-    </tr>
-     
+     </tr>
      <tr>
       <td>id</td>
       <td>Neste parâmetro voce consegue definir o id do elemento.</td>
       <td>text: "caixa"</td>
     </tr>
-     
     <tr>
       <td>text</td>
       <td>Nesta parâmetro voce consegue definir o texto que será esboçado dentro do elemento.</td>
       <td>text: "Olá Mundo!"</td>
     </tr>
-     
     <tr>
       <td>style</td>
       <td>Nesta parâmetro voce consegue definir o estilo dentro da tag do elemento, do tipo "inline".</td>
