@@ -122,10 +122,10 @@ crt.create({
      <tr>
       <td>attribute</td>
       <td>Nesta parâmetro voce consegue definir os atributos do elemento, sendo cada um deles um array contendo um objeto com dois parâmetros a mais. O parâmetro de "type" você irá definir o qual será o atributo setado. O parâmetro "value" voce irá introduzir o valor como string.</td>
-      <td>attribute: [{<br>
-            type: "data",<br>
-            value: "informacao"<br>
-         }]
+      <td><pre>attribute: [{
+            type: "data",
+            value: "informacao"
+         }]</pre>
         </td>
     </tr>
     <tr>
