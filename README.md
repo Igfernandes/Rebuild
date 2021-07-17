@@ -2,8 +2,9 @@
 # Desenvolvedor: Igor Fernandes
 
 <pre>
-- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos. 
+- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos HTML pelo JS. A dinamicidade do projeto torna capaz a divisão de elementos, com uma arquitetura fragmentada que irá ajudar a otimizar o desempenho e a organização de seus códigos. A sua estrutura basea-se numa arquitetura Do React, mas utilizando apenas recursos nativos do JS.<br>
 </pre>
+
 
 
 <img src="./screenshot.jpg" alt="screenshot of project">
@@ -42,17 +43,33 @@ crt.create({
 
 <br><br><br>
  
-<pre>4° - Agora coloque a classe 'sidebar' dentro da mesma div em que está o 'data-offset'</pre> <br> <br>
+##INCLUINDO NO MÓDULO: 
+<pre>No seu arquivo .JS, importe o construtor "Construct" do rebuild</pre> <br>
 
-<pre>6° - Coloque também a classe 'content' na div irmã da que está com a class 'sidebar'</pre><br> <br>
+<pre>
+   Em seguida instâncie uma váriável como um tipo "Construct".
+</pre><br>
 
-<pre>5° - Ainda nos seus códigos, coloque o atributo 'data-sideBtn' no seu button responsável pela ativação do sidebar</pre><br> <br>
+<pre>
+   Por fim acesse o método "create" e passe um objeto com os parâmetros para construir seus elementos html.
+</pre>
+<br>
 
-<strong><h3>PRONTO!</h3></strong> 
+<pre>
 
-Agora o código irá configurar sozinho a propriedade do sidebar, além de criar um botão personalizado. 
+let crt = new Construct();
 
-<img src="https://raw.githubusercontent.com/Igfernandes/sidebars/main/print.jpg" >
+crt.create({
+   type: "div",
+   class: "hello-world",
+   coord: document.querySelector("body"),
+   child:[
+      <span>Olá Mundo</span>        
+   ]
+});
+</pre>
+
+
 <br><br><br>
 
 
