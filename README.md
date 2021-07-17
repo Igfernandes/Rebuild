@@ -2,7 +2,7 @@
 # Desenvolvedor: Igor Fernandes
 
 <pre>
-- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos HTML pelo JS. A dinamicidade do projeto torna capaz a divisão de elementos, com uma arquitetura fragmentada que irá ajudar a otimizar o desempenho e a organização de seus códigos. A sua estrutura basea-se numa arquitetura Do React, mas utilizando apenas recursos nativos do JS.<br>
+- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos HTML pelo<br> JS. A dinamicidade do projeto torna capaz a divisão de elementos, com uma arquitetura fragmentada que irá ajudar a otimizar o desempenho e a organização de seus códigos. A sua estrutura basea-se numa arquitetura Do React, mas utilizando apenas recursos nativos do JS.<br>
 </pre>
 
 
