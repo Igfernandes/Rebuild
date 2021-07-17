@@ -2,7 +2,7 @@
 # Desenvolvedor: Igor Fernandes
 
 <pre>
-- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação <br> dos seus códigos. 
+- A biblioteca permite que voce crie códigos HMTL de forma dinâmica, trazendo mais facilidade na implementação de códigos. 
 </pre>
 
 
