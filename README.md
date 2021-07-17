@@ -142,39 +142,13 @@ crt.create({
              ]
         </td>
     </tr>
-     
    <tr>
       <td>child</td>
       <td>Nesta parâmetro voce consegue definir elementos filhos a serem introduzidos no elemento que será criado, sendo o parâmetro um array recebendo elementos do tipo html definidos. A ordem em que os elementos são introduzidos segue a mesma que serão criados no html. Na biblioteca, é possível criar um modelo cascata com esse parâmetro, definindo uma nova estrutura dentro desse parâmetro "child".</td>
-          <td>   crt.create({<br>
-                 type: "game",<br>
-                 coord: document.querySelector("body"),<br>
-                 child:[<br>
-                     crt.create({<br>
-                         type: "div",<br>
-                         class: "game_boy",<br>
-                         child: [<br>
-                             crt.create({<br>
-                                 type: "span",<br>
-                                 text: "Eu sou um game boy"<br>
-                             })<br>
-                         ]<br>
-                     }),<br>
-                     crt.create({<br>
-                         type: "div",<br>
-                         class: "mesa",<br>
-                         child: [<br>
-                             crt.create({<br>
-                                 type: "span",<br>
-                                 text: "Eu sou uma mesa"<br>
-                             })<br>
-                         ]<br>
-                     })<br>
-                 ]<br>
-             });<br>
-        </td>
+          <td>   
+        </td
     </tr>
-     <tr id="imgstag">
+    <tr id="imgstag">
       <td>Extra</td>
       <td>As tags "imgs" seguem um próprio padrão, onde o programdor poderá definir mais 3 parâmetros na estrutura: src, title e o alt. Os três parâmetros recebem valores do tipo string e são destinados a esse elemento image que será criado pela biblioteca</td>
       <td>type: "img",<br>
