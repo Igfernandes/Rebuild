@@ -107,7 +107,7 @@ crt.create({
      <tr>
       <td>id</td>
       <td>Neste parâmetro voce consegue definir o id do elemento.</td>
-      <td><pre>text: "caixa"</pre></td>
+      <td><pre>id: "caixa"</pre></td>
     </tr>
     <tr>
       <td>text</td>
@@ -117,7 +117,7 @@ crt.create({
     <tr>
       <td>style</td>
       <td>Nesta parâmetro voce consegue definir o estilo dentro da tag do elemento, do tipo "inline".</td>
-      <td><pre>text: "Olá Mundo!"</pre></td>
+      <td><pre>style: "Olá Mundo!"</pre></td>
     </tr>
      <tr>
       <td>attribute</td>
